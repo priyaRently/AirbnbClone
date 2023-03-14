@@ -13,7 +13,7 @@ const Home = (props) => {
       </Pressable>
 
       <ImageBackground
-        source={require('AirbnbClone/assets/images/ImageBackground_Home.jpg')}
+        source={require('AirbnbClone/assets/images/Image1.jpg')}
         style={styles.imageBackground}>
         <Text style={styles.textGoNear}>Go Near</Text>
         
@@ -23,6 +23,9 @@ const Home = (props) => {
         
         </Pressable>
       </ImageBackground>
+      <Text style={styles.textLiveAnywhere}>
+        Live anywhere
+      </Text>
     </View>
   )
 }

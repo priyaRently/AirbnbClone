@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         justifyContent:'center'
     },
     textGoNear:{
-        color:'white',
+        color:'#F5EAEA',
         fontSize:80,
         fontWeight:'bold',
         width:'70%',
@@ -42,14 +42,21 @@ const styles = StyleSheet.create({
         marginLeft:20,
         justifyContent:'center',
         alignItems:'center',
-        padding:10
     },
     textExplore:{
+        padding:12,
         color:'black',
-        fontSize:16,
+        fontSize:18,
         fontWeight:'bold',
     },
-    
+    textLiveAnywhere:{
+        color:'black',
+        fontSize:25,
+        fontWeight:'700',
+        marginLeft:25,
+        marginVertical:25,
+        padding:10,
+    },
 });
 
 export default styles;
