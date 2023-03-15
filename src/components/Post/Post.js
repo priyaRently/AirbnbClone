@@ -1,24 +1,45 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, SafeAreaView, FlatList } from 'react-native'
 import React from 'react'
 import styles from './styles'
+import feed from 'AirbnbClone/assets/data/feed'
 
 const Post = () => {
-  return (
+
+  const post = feed;
+
+  const renderItem = ({item}) => (
     <View style={styles.container}>
-      <Image 
-      source={require('AirbnbClone/assets/images/Post.jpg')}
-      style={styles.image}/>
-      <Text style={styles.info1}>1 bed . 1 bedroom</Text>
-      <Text style={styles.info2}>
-        Description
-      </Text>
-      <Text style={styles.info3}>
-        $43 <Text style={{color:'black'}}>$36</Text>/night
-      </Text>
-      <Text style={styles.info4}>
-        $247 total
-      </Text>
-    </View>
+    <Image style={styles.image}
+      source={item.image}
+    />
+
+    <Text style={styles.bedrooms}>
+      {item.bed} bed . {item.bedroom} bedroom
+    </Text>
+    <Text style={styles.description} numberOfLines={2}>
+      {item.type}. {item.title}
+    </Text>
+    <Text style={styles.price}>
+      <Text style={styles.oldPrice}>${item.oldPrice}</Text>
+      <Text style={styles.newPrice}> ${item.newPrice}</Text>
+      /night
+    </Text>
+
+    <Text style={styles.totalPrice}>${item.totalPrice} total</Text>
+  </View>
+  );
+
+  return (
+    
+    <SafeAreaView>
+      <FlatList
+      data={post}
+      renderItem={renderItem}
+      keyExtractor={item => item.id}
+      />
+
+    </SafeAreaView>
+    
   )
 }
 

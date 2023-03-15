@@ -6,24 +6,32 @@ const styles = StyleSheet.create({
     },
     image:{
         width:'100%',
-        height:250,
-        resizeMode:'cover',
-        justifyContent:'center',
+        height:220,
         borderRadius:10,
+        resizeMode:'cover',
     },
-    info1:{
-        fontSize:18,
+    bedrooms:{
+        marginVertical:10,
+
     },
-    info2:{
-        fontSize:22,
+    description:{
+        fontSize:20,
+        lineHeight:26,
         color:'black',
     },
-    info3:{
-        fontSize:20,
-        
+    price:{
+        fontSize:20,  
+        color:'black',
     },
-    info4:{
-        fontSize:20,
+    oldPrice:{
+        textDecorationLine:'line-through',
+        color:'#5b5b5b'
+    },
+    newPrice:{
+        fontWeight:'bold',
+    },
+    totalPrice:{
+        fontSize:18,
         textDecorationLine:'underline'
     },
 })
