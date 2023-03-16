@@ -12,10 +12,11 @@ export default styles = StyleSheet.create({
     },
     buttonBox:{
         flexDirection:'row',
-        alignItems:'center'
+        alignItems:'center',
     },
     button:{
         borderWidth:1,
+        borderRadius:5,
         width:30,
         height:30,
         alignItems:'center',

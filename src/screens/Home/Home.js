@@ -2,12 +2,15 @@ import { View, Text, ImageBackground, Pressable } from 'react-native'
 import React from 'react'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
 const Home = (props) => {
+  const navigation = useNavigation();
   return (
+    
     <View style={styles.container}>
 
       <Pressable style={styles.searchBtn}
-        onPress={() => console.warn('Search button clicked')}>
+        onPress={() => navigation.navigate('Destination')}>
         <Fontisto name='search' size={25} color={'#f15454'}/>
         <Text style={styles.searchBtnText}>Where are you going?</Text>
       </Pressable>
@@ -18,7 +21,7 @@ const Home = (props) => {
         <Text style={styles.textGoNear}>Go Near</Text>
         
         <Pressable style={styles.button}
-          onPress={() => console.warn('Explore button clicked')}>
+          onPress={() => navigation.navigate('Explore')}>
           <Text style={styles.textExplore}>Explore nearby stays</Text>
         
         </Pressable>

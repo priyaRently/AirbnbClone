@@ -1,0 +1,46 @@
+import { StyleSheet } from "react-native";
+
+export default styles=StyleSheet.create({
+    container:{
+        margin:20,
+    },
+    title:{
+        fontSize:32,
+        fontWeight:'bold',
+        color:'black'
+    },
+    desc:{
+        fontSize:18,
+        marginBottom:18,
+    },
+    button:{
+        marginVertical:10,
+        backgroundColor:'#DF2E38',
+        width:'100%',
+        borderRadius:10,
+        alignItems:'center',
+        justifyContent:'center',
+        padding:5
+    },
+    buttonText:{
+        margin:5,
+        fontSize:24,
+        color:'white',
+        fontWeight:'bold',
+    },
+    optionView:{
+        marginTop:20
+    },
+    btnText:{
+        fontSize:22,
+        marginLeft:20
+    },
+    optionBtn:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between',
+        borderBottomWidth:1,
+        paddingBottom:15,
+        marginBottom:15
+    }
+})
