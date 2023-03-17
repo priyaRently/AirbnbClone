@@ -21,7 +21,7 @@ const Home = (props) => {
         <Text style={styles.textGoNear}>Go Near</Text>
         
         <Pressable style={styles.button}
-          onPress={() => navigation.navigate('Explore')}>
+          onPress={() => navigation.navigate('Guests')}>
           <Text style={styles.textExplore}>Explore nearby stays</Text>
         
         </Pressable>

@@ -16,12 +16,12 @@ const Guests = () => {
                 </View>
                 <View style={styles.buttonBox}>
                     <TouchableOpacity
-                        onPress={() => {if(adults > 0) setAdults(adults - 1)}}
+                        onPress={() => { if (adults > 0) setAdults(adults - 1) }}
                         style={styles.button}>
                         <Icon name="minus" size={24} color="black" />
                     </TouchableOpacity>
 
-                    <Text style={{ marginHorizontal: 15, fontSize: 24, color:"black" }}>{adults}</Text>
+                    <Text style={{ marginHorizontal: 15, fontSize: 24, color: "black" }}>{adults}</Text>
 
                     <TouchableOpacity
                         onPress={() => setAdults(adults + 1)}
@@ -37,11 +37,11 @@ const Guests = () => {
                 </View>
                 <View style={styles.buttonBox}>
                     <TouchableOpacity
-                        onPress={() => {if(children > 0) setChildren(children - 1)}}
+                        onPress={() => { if (children > 0) setChildren(children - 1) }}
                         style={styles.button}>
                         <Icon name="minus" size={24} color="black" />
                     </TouchableOpacity>
-                    <Text style={{ marginHorizontal: 15, fontSize: 24, color:"black" }}>{children}</Text>
+                    <Text style={{ marginHorizontal: 15, fontSize: 24, color: "black" }}>{children}</Text>
                     <TouchableOpacity
                         onPress={() => setChildren(children + 1)}
                         style={styles.button}>
@@ -56,11 +56,11 @@ const Guests = () => {
                 </View>
                 <View style={styles.buttonBox}>
                     <TouchableOpacity
-                        onPress={() => {if(infants > 0) setInfants(infants - 1)}}
+                        onPress={() => { if (infants > 0) setInfants(infants - 1) }}
                         style={styles.button}>
                         <Icon name="minus" size={24} color="black" />
                     </TouchableOpacity>
-                    <Text style={{ marginHorizontal: 15, fontSize: 24, color:"black" }}>{infants}</Text>
+                    <Text style={{ marginHorizontal: 15, fontSize: 24, color: "black" }}>{infants}</Text>
                     <TouchableOpacity
                         onPress={() => setInfants(infants + 1)}
                         style={styles.button}>
@@ -68,6 +68,22 @@ const Guests = () => {
                     </TouchableOpacity>
                 </View>
             </View>
+
+            <TouchableOpacity style={{
+                backgroundColor: '#DF2E38',
+                borderRadius: 10,
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: 5,
+                marginTop:50
+            }}>
+                <Text style={{
+                    margin: 5,
+                    fontSize: 24,
+                    color: 'white',
+                    fontWeight: 'bold',
+                }}>Search</Text>
+            </TouchableOpacity>
         </View>
     )
 }

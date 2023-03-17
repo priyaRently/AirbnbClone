@@ -2,11 +2,11 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import Home from '../src/screens/Home/Home';
-import Profile from '../src/screens/Profile/Profile';
-import Wishlists from '../src/screens/Wishlists/Wishlists';
-import Inbox from '../src/screens/Inbox/Inbox';
-import Trips from '../src/screens/Trips/Trips';
+import Home from '../screens/Home/Home';
+import Profile from '../screens/Profile/Profile';
+import Wishlists from '../screens/Wishlists/Wishlists';
+import Inbox from '../screens/Inbox/Inbox';
+import Trips from '../screens/Trips/Trips';
 
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -14,7 +14,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 const Tab = createBottomTabNavigator();
-const Fun = () => {
+const Func = () => {
     
   return (
       <Tab.Navigator screenOptions={() => ({
@@ -84,6 +84,6 @@ const Fun = () => {
   )
 }
 
-export default Fun
+export default Func
 
 const styles = StyleSheet.create({})

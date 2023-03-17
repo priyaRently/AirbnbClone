@@ -5,7 +5,6 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 import Entypo from 'react-native-vector-icons/Entypo'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import MIcon from 'react-native-vector-icons/MaterialCommunityIcons'
-import Login from '../../components/Login Page/Login'
 import { useNavigation } from '@react-navigation/native'
 
 const Profile = () => {
