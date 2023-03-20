@@ -9,8 +9,6 @@ export default styles =StyleSheet.create({
         borderRadius:10,
         borderWidth:1,
         padding:20,
-        shadowColor:'grey',
-        elevatiion:1
     },
     title:{
         marginVertical:12,

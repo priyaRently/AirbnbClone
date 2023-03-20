@@ -3,7 +3,7 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import Home from '../screens/Home/Home';
-import Profile from '../screens/Profile/Profile';
+import Profile from '../screens/Profile/ProfileLogout';
 import Wishlists from '../screens/Wishlists/Wishlists';
 import Inbox from '../screens/Inbox/Inbox';
 import Trips from '../screens/Trips/Trips';

@@ -2,8 +2,11 @@ import { View, Text, TouchableOpacity, } from 'react-native'
 import React, { useState } from 'react'
 import styles from './styles'
 import Icon from 'react-native-vector-icons/Entypo';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Guests = () => {
+    const navigation = useNavigation();
     const [adults, setAdults] = useState(0);
     const [children, setChildren] = useState(0);
     const [infants, setInfants] = useState(0);
@@ -76,7 +79,8 @@ const Guests = () => {
                 justifyContent: 'center',
                 padding: 5,
                 marginTop:50
-            }}>
+            }}
+            onPress={()=>navigation.navigate('Destination')}>
                 <Text style={{
                     margin: 5,
                     fontSize: 24,

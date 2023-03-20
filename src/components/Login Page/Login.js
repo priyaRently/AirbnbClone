@@ -3,8 +3,11 @@ import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native'
+
 
 const Login = () => {
+    const navigation = useNavigation();
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Log in or sign up to Airbnb</Text>
@@ -23,13 +26,14 @@ const Login = () => {
                 We'all call or text you to confirm your number.
                 Standard message and data rates apply.
             </Text>
-            <TouchableOpacity style={styles.continueBtn}>
+            <TouchableOpacity style={styles.continueBtn}
+                onPress={() => navigation.navigate('ProfileLogin')}>
                 <Text style={styles.continueText}>Continue</Text>
             </TouchableOpacity>
-            <View style={{flexDirection:'row',alignItems:'center',justifyContent:'center',marginVertical:15}}>
-                <Text style={{textDecorationLine:'line-through', color:'#DDDDDD'}}>                  </Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginVertical: 15 }}>
+                <Text style={{ textDecorationLine: 'line-through', color: '#DDDDDD' }}>                  </Text>
                 <Text style={styles.orText}>or</Text>
-                <Text style={{textDecorationLine:'line-through', color:'#DDDDDD'}}>                  </Text>
+                <Text style={{ textDecorationLine: 'line-through', color: '#DDDDDD' }}>                  </Text>
             </View>
 
 
