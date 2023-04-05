@@ -6,30 +6,34 @@ const styles = StyleSheet.create({
     },
     searchBtn:{
         backgroundColor:'white',
-        width: Dimensions.get('screen').width - 20,
+        // width: Dimensions.get('screen').width - 20,
+        width:'90%',
         height:60,
-        borderRadius:30,
+        borderRadius:25,
         marginHorizontal:10,
         flexDirection:'row',
-        justifyContent:'center',
+
         alignItems:'center',
         position:'absolute',
         top:20,
         zIndex:100,
+        alignSelf:'center'
     },
     searchBtnText:{
         fontSize:18,
-        fontWeight:700
+        fontWeight:700,
+        marginLeft:15,
+        color:"black"
     },
     imageBackground:{
         width:'100%',
-        height:500,
+        height:400,
         resizeMode:'cover',
         justifyContent:'center'
     },
     textGoNear:{
         color:'#F5EAEA',
-        fontSize:80,
+        fontSize:60,
         fontWeight:'bold',
         width:'70%',
         marginLeft:20

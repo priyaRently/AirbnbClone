@@ -36,7 +36,8 @@ const ProfileLogin = () => {
 
             <TouchableOpacity style={styles.optionBtn}>
                 <View style={{ flexDirection: 'row' }}>
-                    <AntDesign name='setting' size={26} />
+                    {/* <AntDesign name='setting' size={26} /> */}
+                    
                     <Text style={styles.btnText}>Personal information</Text>
                 </View>
                 <Icon name='arrow-right' size={30} />

@@ -4,8 +4,10 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import styles from './styles'
 import { useNavigation } from '@react-navigation/native'
-
-
+import Email from 'AirbnbClone/assets/svg icons/email.svg'
+import Apple from 'AirbnbClone/assets/svg icons/apple.svg'
+import Facebook from 'AirbnbClone/assets/svg icons/facebook-logo-2019.svg'
+import Google from 'AirbnbClone/assets/svg icons/google.svg'
 const Login = () => {
     const navigation = useNavigation();
     return (
@@ -39,19 +41,23 @@ const Login = () => {
 
             <View style={styles.optionView}>
                 <TouchableOpacity style={styles.optionBtn}>
-                    <Icon name='mail-outline' size={24} color='black' />
+                    {/* <Icon name='mail-outline' size={24} color='black' /> */}
+                    <Email width={24} height={24}/>
                     <Text style={styles.optionText}>Continue with Email</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.optionBtn}>
-                    <Icon name='facebook' size={24} color='#2F58CD' />
+                    {/* <Icon name='facebook' size={24} color='#2F58CD' /> */}
+                    <Facebook width={24} height={24}/>
                     <Text style={styles.optionText}>Continue with Facebook</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.optionBtn}>
-                    <AntDesign name='google' size={24} />
+                    {/* <AntDesign name='google' size={24} /> */}
+                    <Google width={24} height={24}/>
                     <Text style={styles.optionText}>Continue with Google</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.optionBtn}>
-                    <AntDesign name='apple1' size={24} color='black' />
+                    {/* <AntDesign name='apple1' size={24} color='black' /> */}
+                    <Apple width={24} height={24}/>
                     <Text style={styles.optionText}>Continue with Apple</Text>
                 </TouchableOpacity>
             </View>
